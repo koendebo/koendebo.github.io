@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Park Easy - Login</title>
+    <link rel="stylesheet" type="text/css" href="css/location.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/LeastOccupied.css">
+</head>
+
+<body>
+    <header class="header">
+    <img class="logo" src="images/logo-header.svg">
+    <div class="parkeasy">Park Easy</div>
+</header>
+    <nav>
+    <ul class="topnav" id="myTopnav">
+        <li class="menu"><a id="kleurHover">Location</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Location.html">Location</a></li>
+        <li><a href="ChoiceMenu.html">Choice Menu</a></li>
+        <li class="icon">
+        <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+        </li>
+    </ul>
+</nav>
+
+<!--Animatie menu-->
+ <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    }   
+</script>
+<!--Einde Animatie menu-->
+    <div class="mdl-layout mdl-js-layout">
+      <main class="mdl-layout__content">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--12-col parking-results">
+          </div>
+        </div>
+      </main>
+</div>
+
+    <!-- My Own Scripts: Main Script -->
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>    
+
+</html>

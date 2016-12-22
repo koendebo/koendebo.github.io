@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Park Easy - Login</title>
+    <link rel="stylesheet" type="text/css" href="css/price.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+<header class="header">
+    <img class="logo" src="images/logo-header.svg">
+    <div class="parkeasy">Park Easy</div>
+</header>
+<nav>
+    <ul class="topnav" id="myTopnav">
+        <li class="menu"><a id="kleurHover">Location</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Location.html">Location</a></li>
+        <li><a href="ChoiceMenu.html">Choice Menu</a></li>
+        <li class="icon">
+        <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+        </li>
+    </ul>
+</nav>
+
+<!--Animatie menu-->
+ <script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+    }   
+</script>
+<!--Einde Animatie menu-->
+<div class="prijslijst">
+<div class="content">
+<div>
+<input type="checkbox" id="lijst1" name="q" class="parkings">
+<div class="plus">+</div>
+<label for="lijst1" class="parking">
+    Rotation car parks<br>
+    <a class="locatieParking">Sint-Michiels, Reep and Vrijdagmarkt</a>
+</label>
+<div class="lijst">
+  <div class="section group">
+	  <div class="col span_1_of_3">
+	    <h1 class="tarief">Daily rate</h1>
+<table>
+  <tr>
+    <th>Time</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>7 min</td>
+    <td>Free</td>
+  </tr>
+  <tr>
+    <td>30 min</td>
+    <td>€1</td>
+  </tr>
+  <tr>
+    <td>1h</td>
+    <td>€2</td>
+  </tr>
+  <tr>
+    <td>1h 30 min</td>
+    <td>€3</td>
+  </tr>
+  <tr>
+    <td>2h</td>
+    <td>€4</td>
+  </tr>
+  <tr>
+    <td>2h 30 min</td>
+    <td>€5</td>
+  </tr>
+   <tr>
+    <td>3h</td>
+    <td>€6</td>
+  </tr>
+   <tr>
+    <td>4h</td>
+    <td>€7.5</td>
+  </tr>
+   <tr>
+    <td>5h</td>
+    <td>€9</td>
+  </tr>
+   <tr>
+    <td>6h</td>
+    <td>€11</td>
+  </tr>
+   <tr>
+    <td>7h</td>
+    <td>€13.5</td>
+  </tr>
+   <tr>
+    <td>8h</td>
+    <td>€16</td>
+  </tr>
+   <tr>
+    <td>9h</td>
+    <td>€18.5</td>
+  </tr>
+   <tr>
+    <td>10h</td>
+    <td>€21</td>
+  </tr>
+   <tr>
+    <td>11h</td>
+    <td>€23.5</td>
+  </tr>
+   <tr>
+    <td>12h and following</td>
+    <td>€26</td>
+  </tr>
+</table>
+	  </div>
+	
+<div class="col span_1_of_3">
+        <h1 class="tarief">Nightly rate</h1>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>7 min</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td>1h</td>
+                <td>€1.5</td>
+            </tr>
+            <tr>
+                <td>2h</td>
+                <td>€3</td>
+            </tr>
+            <tr>
+                <td>3h</td>
+                <td>€4.5</td>
+            </tr>
+            <tr>
+                <td>4h and following</td>
+                <td>€6</td>
+            </tr>
+            <tr>
+                <td>2h 30 min</td>
+                <td>€5</td>
+            </tr>
+            <tr>
+                <td>3h</td>
+                <td>€6</td>
+            </tr>
+        </table>
+      </div>
+	  <div class="col span_1_of_3">
+
+      <h1 class="tarief">Sunday rate</h1>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>7 min</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td>1h</td>
+                <td>€1.5</td>
+            </tr>
+            <tr>
+                <td>2h</td>
+                <td>€3</td>
+            </tr>
+            <tr>
+                <td>3h</td>
+                <td>€4.5</td>
+            </tr>
+            <tr>
+                <td>4h and following</td>
+                <td>€6</td>
+            </tr>
+            <tr>
+                <td>2h 30 min</td>
+                <td>€5</td>
+            </tr>
+            <tr>
+                <td>3h</td>
+                <td>€6</td>
+            </tr>
+        </table>
+      </div>
+      </div>
+</div>
+ </div>
+
+<div class="content"><div>
+<input type="checkbox" id="lijst2" name="q" class="parkings">
+<div class="plus">+</div>
+<label for="lijst2" class="parking">
+    Mixed car parks<br>
+    <a class="locatieParking">Ramen, Savaanstraat, Sint-Pietersplein and Tolhuis </a>
+</label>
+    
+<div class="lijst">
+  <div class="section group">
+	  <div class="col span_1_of_3">
+
+          <h1 class="tarief">Daily rate</h1>
+<table>
+  <tr>
+    <th>Time</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>7 min</td>
+    <td>Free</td>
+  </tr>
+  <tr>
+    <td>30 min</td>
+    <td>€1</td>
+  </tr>
+  <tr>
+    <td>1h</td>
+    <td>€2</td>
+  </tr>
+  <tr>
+    <td>1h 30 min</td>
+    <td>€3</td>
+  </tr>
+  <tr>
+    <td>2h</td>
+    <td>€4</td>
+  </tr>
+  <tr>
+    <td>2h 30 min</td>
+    <td>€5</td>
+  </tr>
+   <tr>
+    <td>3h</td>
+    <td>€6</td>
+  </tr>
+   <tr>
+    <td>4h</td>
+    <td>€7.5</td>
+  </tr>
+   <tr>
+    <td>5h</td>
+    <td>€9</td>
+  </tr>
+   <tr>
+    <td>6h</td>
+    <td>€10</td>
+  </tr>
+   <tr>
+    <td>7h</td>
+    <td>€11</td>
+  </tr>
+   <tr>
+    <td>8h</td>
+    <td>€12</td>
+  </tr>
+   <tr>
+    <td>9h</td>
+    <td>€13</td>
+  </tr>
+  <tr>
+    <td>10h and following</td>
+    <td>€14</td>
+  </tr>
+</table>
+          
+      </div>
+      
+      
+	  <div class="col span_1_of_3">
+          
+    <h1 class="tarief">Nightly rate</h1>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>7 min</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td>1h</td>
+                <td>€1.5</td>
+            </tr>
+            <tr>
+                <td>2h</td>
+                <td>€3</td>
+            </tr>
+            <tr>
+                <td>3h</td>
+                <td>€4.5</td>
+            </tr>
+            <tr>
+                <td>4h and following</td>
+                <td>€6</td>
+            </tr>
+            <tr>
+                <td>2h 30 min</td>
+                <td>€5</td>
+            </tr>
+            <tr>
+                <td>3h</td>
+                <td>€6</td>
+            </tr>
+        </table>
+          
+	  </div>
+      
+      
+	  <div class="col span_1_of_3">
+          <h1 class="tarief">Sunday rate</h1>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>7 min</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td>1h</td>
+                <td>€1.5</td>
+            </tr>
+            <tr>
+                <td>2h</td>
+                <td>€3</td>
+            </tr>
+            <tr>
+                <td>3h</td>
+                <td>€4.5</td>
+            </tr>
+            <tr>
+                <td>4h and following</td>
+                <td>€6</td>
+            </tr>
+            <tr>
+                <td>2h 30 min</td>
+                <td>€5</td>
+            </tr>
+            <tr>
+                <td>3h</td>
+                <td>€6</td>
+            </tr>
+        </table>
+          
+	  </div>
+</div>
+ </div>
+     </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+<!-----scripts----->
+    <script>
+    $(".faq-q").click( function () {
+  var container = $(this).parents(".faq-c");
+  var answer = container.find(".faq-a");
+  var trigger = container.find(".faq-t");
+  
+  answer.slideToggle(200);
+  
+  if (trigger.hasClass("faq-o")) {
+    trigger.removeClass("faq-o");
+  }
+  else {
+    trigger.addClass("faq-o");
+  }
+});
+    </script>
+    <script>  $(document).ready(function(){
+	$('.menu-anchor').on('click touchstart', function(e){
+		$('html').toggleClass('menu-active');
+	  	e.preventDefault();
+	});
+})
+</script>
+
+</body>
+
+</html>

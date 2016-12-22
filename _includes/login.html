@@ -1,0 +1,39 @@
+<form>
+  <input  type="text" name="Username" id="username" class="name" placeholder="Username"><br>
+  <input  type="password" name="Password" id="password" class="name" placeholder="Password"><br><br>
+  <input  type="button" value="Login" id="submit" class="login" onclick="validate()"><br>
+  <input class="createaccount" type="submit" value="create account">
+</form>
+    
+<!-- Einde Login -->
+    
+<script>
+
+    /*Javascript voor controle log in*/
+    
+    var attempt = 3; // Variable to count number of attempts.
+        
+    // Below function Executes on click of login button.
+    //login is: username= Formget password=formget#123
+    function validate(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if ( username == "Formget" && password == "formget#123"){
+        alert ("Login successfully");
+        window.location = "location.html"; // Redirecting to other page.
+        return false;
+        }
+        else{
+            attempt --;// Decrementing by one.
+            alert("You have left "+attempt+" attempt;");
+                
+            // Disabling fields after 3 attempts.
+            if( attempt == 0){
+                document.getElementById("username").disabled = true;
+                document.getElementById("password").disabled = true;
+                document.getElementById("submit").disabled = true;
+                return false;
+                }
+            }
+        }
+</script>

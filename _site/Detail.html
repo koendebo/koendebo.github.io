@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Park Easy - Login</title>
+    <link rel="stylesheet" type="text/css" href="css/detail.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+<header class="header">
+    <img class="logo" src="images/logo-header.svg">
+    <div class="parkeasy">Park Easy</div>
+</header>
+<nav>
+    <ul class="topnav" id="myTopnav">
+        <li class="menu" id="kleurActievePagina"><a>Home</a></li>
+    </ul>
+</nav>
+
+<script>
+/*Animatie menu*/
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+/*Einde animatie menu*/
+</script>
+<div class="section group">
+	<div class="col span_1_of_3">
+        <img class="logoskeuzemenu" src="images/afstand.svg" width="200px;"><br>
+        <a class="textunderlogo">Route</a>
+	</div>
+	<div class="col span_1_of_3">
+        <a href="price.html"><img class="logoskeuzemenu" src="images/prijs.svg" width="200px"></a><br>
+        <a class="textunderlogo" href="price.html">Price</a>
+	</div>
+	<div class="col span_1_of_3">
+        <a href="LeastOccupied.html"><img class="logoskeuzemenu" src="images/parkeerplaatsen.svg" width="200px;"></a><br>
+        <a class="textunderlogo" href="LeastOccupied.html">222</a>
+	</div>
+</div>
+</body>
+
+</html>
+

@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  background-image: url(../images/parking4.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:  center;
+  background-size: cover;    
+  font-family: "open sans";
+}
+
+
+/*Header*/
+.header {
+	position: fixed;
+    top: 0;
+	right: 0;
+    width: 100%;
+    background-color: rgb(34,34,34);
+    text-align: center;
+}
+.logo {
+    float: left;
+    margin-left: 5%;
+    width: 120px;
+    margin-top: 0.25%;
+}
+
+.parkeasy {
+    color: white;
+    font-family: "open sans";
+    text-transform: uppercase;
+    font-size: 500%;
+    text-align: center;
+    margin-right: 14%;
+}
+
+@media screen and (max-width: 800px) {
+    .parkeasy {
+        font-size: 300%;
+    }
+    .logo {
+        width: 75px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .parkeasy {
+        font-size: 150%;
+    }
+    .logo {
+        width: 40px;
+    }
+    } 
+
+
+/*Navigatiebalk*/
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0,0,0);
+  width: 100%;
+  position: fixed;
+  top: 120px;
+  left: 0;
+}
+
+ul.topnav li {
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li.icon {
+  display: none;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {
+    display: none;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 800px) {
+    ul.topnav {
+        top: 70px;
+    }
+}
+@media screen and (max-width: 480px) {
+    ul.topnav {
+    top: 40px;
+    }
+    }
+
+.menu {
+    margin-right:50px;
+    text-transform: uppercase;
+    cursor: default;
+}
+#kleurChoiceMenu:hover{
+    background-color: rgb(0,0,0);
+    pointer-events: default;
+}
+
+/*Einde Navigatiebalk*/
+
+/*Grid voor logo's keuzemenu*/
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin-top: 280px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 2%;
+    text-align: center;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66%; }
+.span_1_of_3 { width: 32%; }
+
+.textunderlogo{
+    color: white;
+    font-family: "open sans";
+    font-size: 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.textunderlogo:hover{
+    color: rgb(150,150,150);
+}
+
+@media only screen and (max-width: 900px) {
+    .textunderlogo {font-size: 21px;}
+    .logoskeuzemenu {width: 110px;}
+    
+}
+@media only screen and (max-width: 800px) {
+    .logoskeuzemenu {width: 100px; }
+    .textunderlogo {font-size: 18px;}
+}
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 650px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+    .logoskeuzemenu {width: 75px;}
+    .textunderlogo {font-size: 11px;}
+    .section {margin-top: 180px;}
+}
+
+
+/*Einde grid voor logo's keuzemenu*/
+
+* {
+        text-transform: uppercase;
+    }
+
+    usdbvuibeiuvbezouvbzirlvb

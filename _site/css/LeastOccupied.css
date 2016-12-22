@@ -1,0 +1,81 @@
+body {
+    color: white;
+    overflow-y: scroll;
+}
+.parking-results {
+    list-style: none;
+    font-family: "arial";
+    font-size: 20px;
+    margin-top: 160px;
+    width: 40%;
+    position: fixed;
+    left: 28%;
+}
+ul {
+    list-style: none;
+}
+
+.demo-list-three li {
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(139,42,40);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.state__available {
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 240px;
+}
+@media screen and (max-width: 900px) {
+    .state__available{
+        margin-left: 180px;
+    }
+    .parking-results {
+        margin-top: 160px;
+}
+@media screen and (max-width: 800px) {
+    .parking-results {
+        margin-top: 130px;
+        font-size: 15px;
+    }
+    .state__available {
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .parking-results{
+        width: 70%;
+        left: 11%;
+    }
+    .state__available {
+        margin-left: 120px;
+    }
+@media screen and (max-width: 480px) {
+      .parking-results {
+        margin-top: 120px;
+        width: 100%;
+        left: -7%;
+    }
+} 
+    
+    
+    
+.mdl-list__item-primary-content .parking__color-state {
+    background-color: hsla(120, 60%, 50%, 1);
+}
+
+.mdl-list__item-primary-content .parking__color-state--green {
+    background-color: hsla(120, 60%, 50%, 1);
+}
+
+.mdl-list__item-primary-content .parking__color-state--orange {
+    background-color: hsla(45, 60%, 50%, 1);
+}
+
+.mdl-list__item-primary-content .parking__color-state--red {
+    background-color: hsla(0, 60%, 50%, 1);
+}
